@@ -3,8 +3,8 @@
 %bcond_without	tests		# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	XML
-%define	pnam	Filter-PerlTidy
+%define		pdir	XML
+%define		pnam	Filter-PerlTidy
 Summary:	XML::Filter::PerlTidy - SAX filter through Perl::Tidy
 Summary(pl):	XML::Filter::PerlTidy - filtr SAX za po¶rednictwem Perl::Tidy
 Name:		perl-XML-Filter-PerlTidy
