@@ -18,10 +18,10 @@ Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
-BuildRequires:	perltidy
 BuildRequires:	perl-XML-Filter-BufferText
 BuildRequires:	perl-XML-SAX
 BuildRequires:	perl-XML-SAX-Writer
+BuildRequires:	perltidy
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -30,8 +30,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 XML::Filter::PerlTidy automatically calls XML::Filter::BufferText to
 coalesce character data so that a complete element is fed to PerlTidy.
 
-# %description -l pl
-# TODO
+%description -l pl
+XML::Filter::PerlTidy automatycznie wywo³uje XML::Filter::BufferText
+aby po³±czyæ dane znakowe tak, aby dostarczyæ kompletny element do
+PerlTidy.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -54,5 +56,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%{perl_vendorlib}/%{pdir}/*/*.pm
+%{perl_vendorlib}/XML/*/*.pm
 %{_mandir}/man3/*
