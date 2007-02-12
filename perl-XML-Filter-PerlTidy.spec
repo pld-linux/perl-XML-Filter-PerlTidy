@@ -6,7 +6,7 @@
 %define		pdir	XML
 %define		pnam	Filter-PerlTidy
 Summary:	XML::Filter::PerlTidy - SAX filter through Perl::Tidy
-Summary(pl):	XML::Filter::PerlTidy - filtr SAX za po¶rednictwem Perl::Tidy
+Summary(pl.UTF-8):   XML::Filter::PerlTidy - filtr SAX za poÅ›rednictwem Perl::Tidy
 Name:		perl-XML-Filter-PerlTidy
 Version:	0.02
 Release:	1
@@ -30,9 +30,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 XML::Filter::PerlTidy automatically calls XML::Filter::BufferText to
 coalesce character data so that a complete element is fed to PerlTidy.
 
-%description -l pl
-XML::Filter::PerlTidy automatycznie wywo³uje XML::Filter::BufferText
-aby po³±czyæ dane znakowe tak, aby dostarczyæ kompletny element do
+%description -l pl.UTF-8
+XML::Filter::PerlTidy automatycznie wywoÅ‚uje XML::Filter::BufferText
+aby poÅ‚Ä…czyÄ‡ dane znakowe tak, aby dostarczyÄ‡ kompletny element do
 PerlTidy.
 
 %prep
