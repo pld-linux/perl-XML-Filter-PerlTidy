@@ -6,7 +6,7 @@
 %define		pdir	XML
 %define		pnam	Filter-PerlTidy
 Summary:	XML::Filter::PerlTidy - SAX filter through Perl::Tidy
-Summary(pl.UTF-8):   XML::Filter::PerlTidy - filtr SAX za pośrednictwem Perl::Tidy
+Summary(pl.UTF-8):	XML::Filter::PerlTidy - filtr SAX za pośrednictwem Perl::Tidy
 Name:		perl-XML-Filter-PerlTidy
 Version:	0.02
 Release:	1
