@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	XML
 %define		pnam	Filter-PerlTidy
+%include	/usr/lib/rpm/macros.perl
 Summary:	XML::Filter::PerlTidy - SAX filter through Perl::Tidy
 Summary(pl.UTF-8):	XML::Filter::PerlTidy - filtr SAX za pośrednictwem Perl::Tidy
 Name:		perl-XML-Filter-PerlTidy
@@ -15,6 +15,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	9fc25034878e114a332fe2736d0e9513
+URL:		http://search.cpan.org/dist/XML-Filter-PerlTidy/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
