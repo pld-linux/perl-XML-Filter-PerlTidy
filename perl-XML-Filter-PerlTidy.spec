@@ -4,7 +4,6 @@
 
 %define		pdir	XML
 %define		pnam	Filter-PerlTidy
-%include	/usr/lib/rpm/macros.perl
 Summary:	XML::Filter::PerlTidy - SAX filter through Perl::Tidy
 Summary(pl.UTF-8):	XML::Filter::PerlTidy - filtr SAX za pośrednictwem Perl::Tidy
 Name:		perl-XML-Filter-PerlTidy
